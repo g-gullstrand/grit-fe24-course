@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subpage</title>
+</head>
+<body>
+    <h1>This is the subpage</h1>
+
+    <p>Filepath (img src attribute): <strong>../images/image1.jpg</strong></p>
+    <img src="../images/image1.jpg" alt="Dessert landscape" style="max-width:600px">
+    <small style="display: block; color:green">We are traveling up one level (Ie. out of "pages" folder) </small>
+
+    <p>Filepath (img src attribute): <strong>/images/image1.jpg</strong></p>
+    <img src="/images/image2.jpg" alt="A landscape in sunset" style="max-width:600px">
+
+    <small style="display: block; color:red">Will nott work since we are on a local machine, and the root is the root of your filesystem (e.g., C:/ on Windows or / on macOS/Linux) </small>
+
+
+</body>
+</html>
