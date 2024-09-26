@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box {
+            width: 120px;
+            height: 20px;
+            padding: 20px 30px;
+            border: 20px solid rgb(213, 160, 85);
+            margin: 30px 20px;
+            text-align: center;
+        }
+        .border-box {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box content-box">120 x 20</div>
+    <div class="box border-box">120 x 20</div>
+</body>
+</html>
