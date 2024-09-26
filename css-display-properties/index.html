@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS DISPLAY</title>
 </head>
 <body>
-    index sidan
+    <h1>CSS Display</h1>
     
     
-    <section style="display:block; max-width: 800px; background-color:aquamarine; margin-left: auto; margin-right:auto">
-
-        <div style="background-color:#222222;">
-            <div style="width: 200px; background-color:blueviolet;">
+    <section style="max-width: 800px; background-color:rgb(135, 255, 163); margin:auto">
+        <h2 style="font-size: 18px;">This green "section" element is a block element (The css display property is "block") </h2>
+        <p>Since it has a <strong>max-width</strong> and its <strong>margin</strong> is set to "<strong>auto</strong>" it is centered on the page. Ie. An equal amount of margin i applied on both sides. You can see this by inspecting in dev tools</p>
+        <p></p>
+        <div style="background-color:#222222; margin-bottom:40px;">
+            <p style="color: white;">Knapparna nedan är wrappade i en div med en width på 200px. Vi kan därför använda margin för att placera dem där vi vill horzontelt. Testa tex: <strong>margin-left:auto</strong> </p>
+            <div style="margin:auto; width: 200px; background-color:blueviolet;">
                 <Button>Test</Button>
                 <Button>Gå dit</Button>
                 <Button>gå hit</Button>
@@ -20,17 +23,20 @@
         </div>
 
 
-        <p>p  är ett block-element Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit possimus saepe corrupti officia iusto, iste nemo deleniti sequi molestias, nostrum animi qui ab sit at ad aliquam non adipisci illo?</p>
+        <p style="display: inline; background-color:burlywood; margin:5px;">Den här p taggen är egentligen (by default) ett "block-element". Men har ovverridats med css <strong>display: inline;</strong>  </p>
+        <p style="display: inline; background-color:burlywood; margin:5px;">Den här p taggen är egentligen (by default) ett "block-element". Men har ovverridats med css <strong>display: inline;</strong>  </p>
+        <p style="display: inline; background-color:burlywood; margin:5px;">Den här p taggen är egentligen (by default) ett "block-element". Men har ovverridats med css <strong>display: inline;</strong>  </p>
         <p>Den här p taggen  är  block-element</p>
         <p>Den här p taggen  är  block-element</p>
-        <p>Den här p taggen  är  block-element</p>
-        <p>Den här p taggen  är  block-element</p>
-        <p>Den här p taggen  är  block-element</p>
-        
+
+        <h4>Bilder är by deafult <strong>inline</strong>, vilket innebär att de hamnar eftervarandra på "samma rad"</h4>        
+        <h4>Bilden i mitten är wrappad i en div (block element) och hmnar därför på "egen rad"</h4>        
+        <img style="width: 300px;" src="https://images.pexels.com/photos/27977728/pexels-photo-27977728/free-photo-of-ljus-flyg-natur-himmel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
         <img style="width: 300px;" src="https://images.pexels.com/photos/27977728/pexels-photo-27977728/free-photo-of-ljus-flyg-natur-himmel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
         <div>
             <img style="width: 300px;" src="https://images.pexels.com/photos/27977728/pexels-photo-27977728/free-photo-of-ljus-flyg-natur-himmel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
         </div>
+        <img style="width: 300px;" src="https://images.pexels.com/photos/27977728/pexels-photo-27977728/free-photo-of-ljus-flyg-natur-himmel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
         <img style="width: 300px;" src="https://images.pexels.com/photos/27977728/pexels-photo-27977728/free-photo-of-ljus-flyg-natur-himmel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
     </section>
     
