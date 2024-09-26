@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+div h2 {
+    /* display: inline; */
+    background-color: yellow;   
+    color: darkslateblue;
+}
+
+h2, h3, h4 {
+    color: red;
+}
+
+input[type="text"] {
+    background-color: lightblue;
+}
+input[type="email"] {
+    background-color: lightgreen;
+}
+
+div.round {
+    border-radius: 50%;
+    background-color: rgb(44, 181, 250);
+}
+
+button {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: red;
+}
+
+#box3 {
+    background-color: green;
+}
+
+.blue-box {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 10px solid black;
+}
+
+
+#box1 {
+    background-color: red;
+}
