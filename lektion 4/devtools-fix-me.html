@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTools Layout Övning</title>
+    <style>
+        * {
+            box-sizing: content-box;
+            padding: 500px
+        }
+        /* Grundläggande styling som ska justeras via DevTools */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 4em;
+        }
+
+        .container {
+            border: 1px solid black;
+            padding: 20px;
+            margin-top: 50px; /* Denna margin orsakar överdrivet tomt utrymme */
+        }
+
+        .header {
+            text-align: left;
+            font-size: 1.5em; /* Fel storlek */
+        }
+
+        .content img {
+            max-width: 150px; /* Felaktig storlek, ska vara större */
+            float: right; /* Placeras felaktigt */
+        }
+
+        .list {
+            padding-left: 100px; /* Förskjuten lista, ska vara centrerad */
+        }
+
+        .footer {
+            margin-top: 300px; /* Felaktigt utrymme skapas här */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header ska vara centrerad, inte vänsterjusterad -->
+        <header class="header">
+            <h1>Välkommen till Min Sida</h1>
+            <p>Placera allt i mitten av sidan med max-bredd på 800px.</p>
+            <p>Centrera rubrikerna</p>
+        </header>
+
+        <!-- Innehållet är felplacerat -->
+        <div class="content">
+            <p>
+                Detta är en paragraf med lite text. Layouten är allmänt felplacerad. Bilden nedan ska vara större och placerad till vänster.
+            </p>
+            <img src="https://via.placeholder.com/300x200" alt="En bild som behöver fixas">
+        </div>
+
+        <!-- Listan är förskjuten och ska centreras -->
+        <ul class="list">
+            <li>Punkt 1</li>
+            <li>Punkt 2</li>
+            <li>Punkt 3</li>
+        </ul>
+
+        <!-- Footern är för långt ned och behöver justeras -->
+        <footer class="footer">
+            <p>Footer texten är placerad för långt ned.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
