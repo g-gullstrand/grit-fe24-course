@@ -1,0 +1,46 @@
+body {
+    background-color: antiquewhite;
+}
+
+img {
+    max-width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-item {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
+
+.flex.wrap .flex-item {
+    width: 200px;
+}

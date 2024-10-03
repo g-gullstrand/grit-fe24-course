@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascade Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="color: aquamarine;">
+        <h1>Exempel på CSS-cascade</h1>
+        <div>
+            <div>
+                <div>
+                    <p id="unique" class="special super-special">Jag är också aqua</p>
+                    <p class="special pink" style="margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur debitis aliquam eum, nobis, reprehenderit sapiente id accusantium nam pariatur numquam dolore, corporis quaerat obcaecati. Nulla saepe rem vero facere.</p>
+                    <h1 style="color:bisque;" class="display-5 fw-bold text-body-emphasis">Heading styled with bootstrap (!important)</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>Detta stycke använder standardstil från `p`-taggen.</p>
+
+    <p class="special">Detta stycke har en klass och blir stylat med .special.</p>
+
+    <p id="unique">Detta stycke har ett ID och blir stylat med #unique. Det har även `!important`-regel.</p>
+
+    <div class="container">
+        <p class="child">Detta är ett barn-element som ärver `color` från sin förälder, men överrids av sin egen klass.</p>
+    </div>
+
+    <h2 class="special-heading">Detta är en rubrik med klass "special-heading" som har olika specifitet.</h2>
+
+    <h2 class="special-heading override">Den här rubriken har två klasser, "special-heading" och "override".</h2>
+
+
+    <!-- Sizing -->
+    <section class="sizing">
+        <h1>SIZING %</h1>
+        <div class="w-100">
+            <div class="w-80">
+                <div class="w-50"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sizing-vw">
+        <h1>SIZING vw</h1>
+
+    </section>
+
+</body>
+</html>

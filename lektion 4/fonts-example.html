@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts example</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <style>
+
+        @font-face {
+            font-family: "Roboto";
+            src: url(./fonts/Roboto-Regular.ttf);
+            font-weight: 400;
+        }
+        
+        @font-face {
+            font-family: "Roboto";
+            src: url(./fonts/Roboto-Bold.ttf);
+            font-weight: 700;
+        }
+
+
+        * {
+            padding: 0;
+        }
+
+        body {
+            font-size: 18px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: "Playfair Display", serif;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Välkommen till Min Sida</h1>
+        <h2>Underrubrik</h2>
+        <p>Placera allt i mitten av sidan med max-bredd på 800px.</p>
+        <p class="bold">En fet text</p>
+    </div>
+</body>
+</html>

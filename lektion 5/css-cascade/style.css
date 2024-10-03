@@ -1,0 +1,105 @@
+/* Generell stil för p-element */
+p {
+    color: black;
+    font-size: 16px;
+}
+
+/* Code copied from Bootstrap  */
+.text-body-emphasis {
+    opacity: 1;
+    color: limegreen !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+.display-5 {
+    font-size: calc(1.425rem + 2.1vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+
+/* Klass som specifikt förändrar färg */
+.special {
+    color: blue;
+}
+
+p.pink {
+    color: pink;
+}
+
+h1 {
+    color: red;
+}
+.text-body-emphasis
+{
+    /* color: red!important; */
+}
+
+body div p.pink {
+    color: rgb(241, 31, 31);
+}
+
+#unique {
+    color: red;
+}
+
+.super-special {
+    color: orange!important;
+}
+
+/* ID med hög specifitet och !important-regel */
+/* #unique {
+    color: green !important; */
+/* } */
+
+/* Container med arv. Alla barn ska ärva color: purple */
+.container {
+    color: purple;
+}
+
+/* Barn till container men med egen klass */
+.child {
+    color: red;
+}
+
+/* Klass på h2 som förändrar färg */
+.special-heading {
+    color: orange;
+}
+
+/* Senare klass för att överstyra tidigare */
+.override {
+    color: teal;
+}
+
+
+section {
+    width: 800px;
+    margin: 0 auto;
+}
+
+div.w-100 {
+    background-color: lightgreen;
+    width: 100%;
+    height: 300px;
+}
+
+div.w-80 {
+    background-color: lightblue;
+    width: 80%;
+    height: 200px;
+}
+div.w-50 {
+    background-color: coral;
+    width: 50%;
+    height: 100px;
+}
+
+section.sizing-vw {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: lightpink;
+}

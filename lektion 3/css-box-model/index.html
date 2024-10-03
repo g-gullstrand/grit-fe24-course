@@ -19,9 +19,13 @@
         }
     </style>
 </head>
-<body>
+<img>
+
+    <div>New box</div>
+
+
     <div class="box content-box">120 x 20</div>
-    <div class="box border-box" style="width: 220px; height:80px;">220 x 20</div>
+    <div id="box1" class="box border-box" style="width: 220px; height:80px;">220 x 20</div>
     
     
     <div style="background-color:aqua; width:200px;">120 x 20</div>
@@ -29,5 +33,17 @@
     <div style="background-color:rgb(173, 46, 118); width:200px;">120 x 20</div>
     <div style="background-color:rgb(50, 136, 79); width:200px;">120 x 20</div>
     <div style="background-color:aqua; width:200px;">120 x 20</div>
+
+    <form action="" id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        var form = document.getElementById('form');
+        console.log(form);
+    </script>
+
 </body>
 </html>
