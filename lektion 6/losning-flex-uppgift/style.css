@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+header {
+    padding: 40px 0 0 0;
+}
+
+.hero {
+ 
+    margin-top: 100px;
+}
+
+.purple-box {
+    background-color: purple;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+}
+
+h1 {
+    font-size: 8em;
+    margin: 0;
+}
