@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <script src="script.js"></script> -->
+</head>
+<style>
+    @keyframes slideIn {
+        0% {
+            transform: translateX(-100%);
+        }
+        50% {
+            transform: translateX(-20%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    button {
+        display: block;
+        margin-top: 20px;
+    }
+
+    button.animate {
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        background-color: blue;
+        transition: background-color .3s, transform 1s;
+        transition-timing-function: cubic-bezier(0.750, 1.040, 0.730, 0.850);
+        animation: slideIn 1s;
+    }
+    button.animate:hover {
+        background-color: red;
+        transform: scale(1.5);
+    }    
+
+
+
+
+
+
+    button.with-loading-indicator {
+        padding: 10px 20px;
+    }
+    .loader {
+        border: 8px solid #eae9e9; /* Ljusare bakgrundsfärg för hjulet */
+        border-top: 8px solid #3498db; /* Den färgade delen som snurrar */
+        border-radius: 50%; /* Skapar en cirkel */
+        width: 30px;
+        height: 30px;
+    }
+
+    
+    button:active .loader {
+        animation: spin 1s linear infinite; 
+    }
+
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+</style>
+<body>
+    <div class="flex-center">
+        <div>
+            <!-- <button class="animate">Klicka här</button> -->
+            <button class="with-loading-indicator">
+                <div class="loader"></div>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- <button id="loadingButton" class="loading-button">Ladda...</button> -->
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+/* Lägg till en ikon före varje listobjekt */
+li::before {
+    content: "\2705"; /* Lägg till en dekorativ ikon */
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Lägg till text efter länken */
+a::after {
+    content: " (öppnas i nytt fönster)";
+    font-size: 14px;
+    color: grey;
+}
+
+/* Lägg till en linje eller symbol före huvudrubriken */
+h1::before {
+    content: "------------------- ";
+    display: block;
+    font-size: 18px;
+    color: lightgrey;
+    margin-bottom: 10px;
+}

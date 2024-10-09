@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.loading-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.loading-button:hover {
+    background-color: #0056b3; /* Mörkare blå vid hover */
+}
+
+.loading-button.loading {
+    background-color: #007bff;
+    pointer-events: none; /* Inaktiverar knappen under laddning */
+}
+
+/* Loading Indicator */
+.loading-button .loader {
+    border: 3px solid white;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Döljer indikatorn från början */
+}
+
+.loading-button.loading .loader {
+    display: block; /* Visar indikatorn när laddning pågår */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

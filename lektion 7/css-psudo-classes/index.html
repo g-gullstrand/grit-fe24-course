@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Child Selectors</title>
+    <style>
+
+
+        div {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        /* Välj den första paragrafen i sin förälder */
+        /*
+        p:first-of-type {
+            font-weight: bold;
+            color: blue;
+        }
+            */
+
+        /* Välj den första paragrafen i sin förälder */
+           p:first-child {
+            font-weight: bold;
+            color: lime;
+        }
+
+
+        /* Välj det sista listobjektet i en lista */
+        li:last-child {
+            color: red;
+            font-style: italic;
+        }
+
+        /* Välj vartannat listobjekt (jämna) */
+        li:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        /* Välj det tredje objektet i sin typ (oavsett annan innehåll) */
+        p:nth-of-type(3) {
+            color: green;
+            text-decoration: underline;
+        }
+
+        /* Välj alla knappar förutom de med klassen .disabled */
+        button:not(.disabled) {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Välj knappar som är disabled */
+        button.disabled {
+            background-color: grey;
+            cursor: not-allowed;
+        }
+
+        /* Ändra bakgrundsfärgen vid hover */
+        button:not(.disabled):hover {
+            background-color: darkgreen;
+        }
+
+        /* Ändra border när ett input-fält är i fokus */
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+        }
+
+        /* Ändra färg när ett element är i fokus med tab */
+        a:focus {
+            color: orange;
+            outline: 2px solid orange;
+        }
+
+        /* Lägger till en ikon till varje länk utom den första */
+        a::after {
+            content: "\00A7";
+        }
+        /*
+        a:not(:first-of-type)::before {
+            content: "🔗 ";
+        }
+            */
+    </style>
+</head>
+<body>
+
+    <div>
+        <h2>Exempel på :first-of-type</h2>
+        <p>Första paragrafen i div.</p>
+        <p>Andra paragrafen i div.</p>
+        <p>Tredje paragrafen i div.</p>
+    </div>
+
+    <ul>
+        <h2>Exempel på :nth-child() och :last-child</h2>
+        <li>Första objektet</li>
+        <li>Andra objektet</li>
+        <li>Tredje objektet</li>
+        <li>Fjärde objektet (sista objektet)</li>
+    </ul>
+
+    <div>
+        <p>Första paragrafen i div.</p>
+        <h2>Exempel på :nth-of-type() och .not</h2>
+        <p>Andra paragrafen i div.</p>
+        <p>Tredje paragrafen i div (tillämpad med nth-of-type).</p>
+    </div>
+
+    <h2>Exempel på :not()</h2>
+    <button class="disabled">Inaktiverad knapp</button>
+    <button>Aktiv knapp</button>
+
+    <h2>Exempel på :hover och :focus</h2>
+    <input type="text" placeholder="Skriv något här..." >
+    <br><br>
+    <a href="#">Länk 1</a>
+    <a href="#">Länk 2</a>
+    <a href="#">Länk 3</a>
+
+</body>
+</html>
